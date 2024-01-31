@@ -1,0 +1,32 @@
+{
+    "MinutePackage":[
+        {
+            "id":"1",
+            "name":"Turbo",
+            "country":"Bangladesh",
+            "price":500,
+            "minutes":100
+        },
+        {
+            "id":"2",
+            "name":"Maxi",
+            "country":"India",
+            "price":100,
+            "minutes":10
+        },
+        {
+            "id":"3",
+            "name":"Duronto",
+            "country":"Bangladesh",
+            "price":900,
+            "minutes":200
+        },
+        {
+            "id":"4",
+            "name":"Shei",
+            "country":"Bangladesh",
+            "price":50,
+            "minutes":15
+        }
+    ]
+}

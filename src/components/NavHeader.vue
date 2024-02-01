@@ -1,7 +1,6 @@
 <template>
   <header>
     <nav data-aos="fade-down"
-    
     data-aos-delay="50"
     data-aos-duration="800">
       <div class="logo">
@@ -10,8 +9,13 @@
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">Settings</a></li>
-        <li><a href="#">Profile tabs</a></li>
+        <li><a href="#">Profile Tabs</a></li>
       </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </nav>
   </header>
 </template>
@@ -36,12 +40,12 @@ nav{
     border-bottom-width: 4px;
 }
 
-nav:hover {
+.logo:hover {
   cursor: pointer;
 }
 
 .logo{
-    color: wheat;
+    color: rgb(247, 194, 114);
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 25px;
@@ -49,7 +53,7 @@ nav:hover {
 
 .nav-links{
     display: flex;
-    width: 30%;
+    width: 48%;
     justify-content: space-around;
 }
 .nav-links li{
@@ -73,4 +77,42 @@ a:hover {
       
     }
 
+.burger{
+  display: none;
+}
+
+.burger div{
+  width: 28px;
+  height: 3px;
+  background-color: wheat;
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px){
+  nav{
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+  }
+
+  .logo{
+    height: 30%;
+    font-size: 35px;
+  }
+  .nav-links li{
+    margin-right:50px;
+    text-align: center;
+}
+
+
+
+}
 </style>

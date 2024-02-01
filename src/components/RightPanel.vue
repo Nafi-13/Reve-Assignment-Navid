@@ -1,4 +1,5 @@
 <template>
+  <div class="pack-list">
     <div id="right-panel">
       <h2>Package List</h2>
   
@@ -31,6 +32,7 @@
         <p>Loading minute packages...</p>
       </div>
     </div>
+  </div>
   </template>
   
   <script>
@@ -80,9 +82,10 @@
   *{
     font-family: 'Poppins', sans-serif;
   }
+
     #right-panel {
         float: left;
-  width: 65%; /* Adjust the width as needed */
+  width: 60%;
   box-sizing: border-box;
   padding: 40px;
   background: rgba(27, 27, 27, 0.55);
@@ -99,11 +102,14 @@
     margin-top: -28px;
     font-size: 30px;
     align-items: center;
+    color:rgb(247, 194, 114);
+    text-align: center;
   }
 
     /* Search input styles */
     .search-input {
-      width: 300px;
+      align-items: center;
+      width: 70%;
       padding: 10px;
       border: 2px solid #ccc;
       border-radius: 5px;
@@ -150,5 +156,39 @@
     }
     tr:nth-child(even) {
       background-color: #504c4c;
+    }
+
+
+
+    @media screen and (max-width: 1300px){
+      #right-panel{
+        width: 90%;
+      }
+      .search-input{
+        margin-left: 60px;
+      }
+      label{
+        margin-left: 60px;
+      }
+    }
+
+    @media screen and (max-width: 768px){
+      #right-panel{
+        width: 90%;
+      }
+
+      .search-input{
+        margin-left: 60px;
+      }
+
+      label{
+        margin-left: 60px;
+      }
+    }
+
+    @media screen and (max-width: 512px){
+      table{
+        margin-left:-25px;
+      }
     }
   </style>

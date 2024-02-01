@@ -1,7 +1,7 @@
 <template>
     <div id="right-panel-2">
       <h1>Account Information</h1>
-      <h3>Username - John Doe</h3>
+      <h3>Username - Md. Navid Razzaque</h3>
       <h3>Current Package - Turbo </h3>
     </div>
   </template>
@@ -35,6 +35,7 @@ h1{
   padding: 5px;
   font-size: 30px;
   align-items: left;
+  color: rgb(247, 194, 114);
 }
 
 h3{
@@ -43,6 +44,16 @@ h3{
   padding: 5px;
   font-size: 20px;
   align-items: left;
+}
+
+@media screen and (max-width: 768px){
+  #right-panel-2{
+    width: 90%;
+  }
+
+  h1{
+    text-align: center;
+  }
 }
 
 </style>

@@ -1,4 +1,3 @@
-
 <script>
 import { ref } from 'vue';
 import RightPanel from './RightPanel.vue';
@@ -46,9 +45,8 @@ export default {
         <!-- Add more menu items as needed -->
       </ul>
     </div>
-    <div v-if="isInitial">
-        <div class="initial">Select a menu item on the left</div> 
-        <div class="initial">to get started</div>
+    <div v-if="isInitial" class="instruction">
+        <div class="initial">Select a menu item to get started</div> 
     </div>
     <div v-else>
         <RightPanel v-if="showLeft" data-aos="fade-right"></RightPanel>
@@ -69,7 +67,7 @@ export default {
   #left-panel {
     float: left;
     
-    width: 25%; /* Adjust the width as needed */
+    width: 30%; 
     box-sizing: border-box;
     padding: 10px;
     background: rgba(16, 11, 11, 0.35);
@@ -88,6 +86,7 @@ export default {
     padding: 5px;
     font-size: 30px;
     text-align: center;
+    color:rgb(247, 194, 114);
   }
 
   ul{
@@ -133,5 +132,32 @@ export default {
     text-align: center;
     font-family: 'Bungee', sans-serif;
     letter-spacing: 2px;
+  }
+
+  @media screen and (max-width: 1300px){
+    #left-panel{
+      width: 40%;
+    }
+  }
+
+  @media screen and (max-width: 820px){
+    .instruction{
+      display: none;
+    }
+
+    #left-panel{
+      width: 90%;
+    }
+
+    h2{
+      font-size: 35px;
+    }
+
+    li{
+    padding: 10px;
+    margin-top : 15px;
+    margin-bottom: 35px;
+    font-size: 20px;
+  }
   }
   </style>

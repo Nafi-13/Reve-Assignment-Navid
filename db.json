@@ -1,46 +1,52 @@
 {
     "MinutePackage":[
-        {
-            "id":"1",
-            "name":"Turbo",
-            "country":"Bangladesh",
-            "price":500,
-            "minutes":100
+        { "id": 1, 
+          "name": "Basic Package", 
+          "country": "Bangladesh", 
+          "minutes": 100, 
+          "price": 10 
         },
-        {
-            "id":"2",
-            "name":"Maxi",
-            "country":"India",
-            "price":100,
-            "minutes":10
+        { "id": 2, 
+        "name": "Premium Package", 
+        "country": "United States", 
+        "minutes": 250, 
+        "price": 20 
         },
-        {
-            "id":"3",
-            "name":"Duronto",
-            "country":"Bangladesh",
-            "price":900,
-            "minutes":200
+        { "id": 3, 
+        "name": "Turbo Package", 
+        "country": "Bangladesh", 
+        "minutes": 500, 
+        "price": 30 
         },
-        {
-            "id":"4",
-            "name":"Shei",
-            "country":"Bangladesh",
-            "price":50,
-            "minutes":15
+        { "id": 4, 
+        "name": "Local Package", 
+        "country": "India", 
+        "minutes": 50, 
+        "price": 5 
         },
-        {
-            "id":"5",
-            "name":"Shei",
-            "country":"Bangladesh",
-            "price":50,
-            "minutes":15
+        { "id": 5, 
+        "name": "International Package", 
+        "country": "Australia", 
+        "minutes": 150, 
+        "price": 15 
         },
-        {
-            "id":"6",
-            "name":"Shei",
-            "country":"Bangladesh",
-            "price":50,
-            "minutes":15
+        { "id": 6, 
+        "name": "Standard Package", 
+        "country": "Germany", 
+        "minutes": 200, 
+        "price": 25 
+        },
+        { "id": 7, 
+        "name": "Premium Plus Package", 
+        "country": "France", 
+        "minutes": 350, 
+        "price": 35 
+        },
+        { "id": 8, 
+        "name": "Local Package 2", 
+        "country": "India", 
+        "minutes": 75, 
+        "price": 8 
         }
     ]
 }

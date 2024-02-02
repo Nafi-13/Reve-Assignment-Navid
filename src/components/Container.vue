@@ -140,7 +140,7 @@ export default {
     }
   }
 
-  @media screen and (max-width: 820px){
+  @media screen and (max-width: 840px){
     .instruction{
       display: none;
     }

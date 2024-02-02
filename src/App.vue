@@ -1,6 +1,8 @@
 <template>
+  <div>
   <NavHeader></NavHeader>
   <Container></Container>
+</div>
 </template>
 
 <script>

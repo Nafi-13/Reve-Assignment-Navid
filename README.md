@@ -13,7 +13,8 @@ Make sure you have the following installed on your machine:
 - [Vue.js] (npm install -g @vue/cli)
 - [npm Json Server Package] (npm i json-server -g)
 
-
+### An Overview of the assignment have been provided along with the files for convenience
+Google Drive Link - https://drive.google.com/file/d/1yoki_H9BfwbQc0A-RjwSC8vV5djECVCK/view?usp=sharing
 
 ### Compiles and hot-reloads for development
 

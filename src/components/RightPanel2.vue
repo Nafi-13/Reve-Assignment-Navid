@@ -17,7 +17,7 @@
 
 #right-panel-2 {
   float: left;
-  width: 60%; /* Adjust the width as needed */
+  width: 60%; 
   box-sizing: border-box;
   padding: 10px;
   background: rgba(27, 27, 27, 0.55);

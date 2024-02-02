@@ -112,7 +112,5 @@ a:hover {
     text-align: center;
 }
 
-
-
 }
 </style>

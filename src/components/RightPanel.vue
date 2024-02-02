@@ -3,11 +3,9 @@
     <div id="right-panel">
       <h2>Package List</h2>
   
-      <!-- Search Bar -->
-      <label class="lbl" for="text">Search Packages</label>
+      <label class="lbl">Search Packages</label>
       <br>
-      <input class="search-input" type="text" v-model="searchTerm" @input="filterData" placeholder="Search by name, country, price, minutes">
-      <!-- Table -->
+      <input class="search-input" type="text" v-model="searchTerm" placeholder="Search by name, country, price, minutes">
       <table class="table-container" v-if="filteredPackages.length > 0">
         <thead>
           <tr>
@@ -46,7 +44,6 @@
     },
     computed: {
       filteredPackages() {
-        // Filter the minute packages based on the search term
         const searchTerm = this.searchTerm.toLowerCase();
         return this.minutePackages.filter(paCkage =>
           paCkage.id.toLowerCase().includes(searchTerm) ||
@@ -69,10 +66,6 @@
         } catch (error) {
           console.error('Error fetching minute packages:', error);
         }
-      },
-      filterData() {
-        // Update the filtered data when the search term changes
-        // This is handled automatically by the computed property
       }
     }
   };
@@ -106,7 +99,6 @@
     text-align: center;
   }
 
-    /* Search input styles */
     .search-input {
       align-items: center;
       width: 70%;
@@ -126,7 +118,6 @@
       margin-top: 20px;
     }
 
-    /* Table styles */
     table {
       width: 100%;
       border-collapse: collapse;
@@ -137,7 +128,6 @@
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
     }
 
-    /* Table header styles */
     th, td {
       padding: 15px;
       font-weight: 500;
@@ -150,7 +140,6 @@
       color: #fff;
     }
 
-    /* Alternating row colors */
     tr:nth-child(odd) {
       background-color: #231313;
     }

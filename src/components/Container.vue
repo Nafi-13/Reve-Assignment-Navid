@@ -42,7 +42,6 @@ export default {
       <ul>
         <li @click="toggleLeftPanel(false)"><a href="#"> Account Information</a></li>
         <li @click="toggleLeftPanel(true)"><a href="#"> Minute Packages </a></li>
-        <!-- Add more menu items as needed -->
       </ul>
     </div>
     <div v-if="isInitial" class="instruction">
@@ -118,10 +117,9 @@ export default {
       font-weight: 400;    
     }
 
-    /* Hover state styles */
     a:hover {
-      color: rgb(13, 13, 13); /* Change text color on hover to provide contrast */
-      background-color: wheat; /* Change background color on hover */
+      color: rgb(13, 13, 13); 
+      background-color: wheat; 
       scale: 1.1;
     }
 
